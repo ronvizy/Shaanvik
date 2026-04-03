@@ -1,0 +1,125 @@
+window.AppData = {
+  GALLERY: (() => {
+    const galleryGroups = [
+      {
+        cat: 'rings',
+        label: 'Ring',
+        emoji: '💍',
+        bg: 'linear-gradient(135deg,#f0d9dd,#d8a5b0)',
+        images: [
+          'src/Rings/WhatsApp Image 2026-03-30 at 12.19.20 (2).jpeg',
+          'src/Rings/WhatsApp Image 2026-03-30 at 12.19.20 (3).jpeg',
+          'src/Rings/WhatsApp Image 2026-03-30 at 12.19.23 (1).jpeg',
+          'src/Rings/WhatsApp Image 2026-03-30 at 12.19.23 (2).jpeg',
+        ],
+      },
+      {
+        cat: 'bracelets',
+        label: 'Bracelet',
+        emoji: '🔗',
+        bg: 'linear-gradient(135deg,#efe3c9,#d4b579)',
+        images: [
+          'src/bracelets/WhatsApp Image 2026-03-30 at 12.19.18.jpeg',
+          'src/bracelets/WhatsApp Image 2026-03-30 at 12.19.26 (2).jpeg',
+          'src/bracelets/WhatsApp Image 2026-03-30 at 12.19.26 (3).jpeg',
+          'src/bracelets/WhatsApp Image 2026-03-30 at 12.19.27 (1).jpeg',
+          'src/bracelets/WhatsApp Image 2026-03-30 at 12.19.28.jpeg',
+          'src/bracelets/WhatsApp Image 2026-03-30 at 12.19.29.jpeg',
+          'src/bracelets/WhatsApp Image 2026-03-30 at 12.19.30 (1).jpeg',
+        ],
+      },
+      {
+        cat: 'necklaces',
+        label: 'Necklace',
+        emoji: '📿',
+        bg: 'linear-gradient(135deg,#d8d8ec,#b0b0d4)',
+        images: [
+          'src/neclace/WhatsApp Image 2026-03-30 at 12.19.20.jpeg',
+          'src/neclace/WhatsApp Image 2026-03-30 at 12.19.23.jpeg',
+          'src/neclace/WhatsApp Image 2026-03-30 at 12.19.28 (2).jpeg',
+          'src/neclace/WhatsApp Image 2026-03-30 at 12.19.28 (3).jpeg',
+        ],
+      },
+      {
+        cat: 'earings',
+        label: 'Earing',
+        emoji: '✨',
+        bg: 'linear-gradient(135deg,#f5e4c0,#e8c870)',
+        images: [
+          'src/earings/WhatsApp Image 2026-03-30 at 12.19.21 (1).jpeg',
+          'src/earings/WhatsApp Image 2026-03-30 at 12.19.21 (2).jpeg',
+          'src/earings/WhatsApp Image 2026-03-30 at 12.19.21 (3).jpeg',
+          'src/earings/WhatsApp Image 2026-03-30 at 12.19.21.jpeg',
+          'src/earings/WhatsApp Image 2026-03-30 at 12.19.22 (1).jpeg',
+          'src/earings/WhatsApp Image 2026-03-30 at 12.19.22 (2).jpeg',
+          'src/earings/WhatsApp Image 2026-03-30 at 12.19.22.jpeg',
+          'src/earings/WhatsApp Image 2026-03-30 at 12.19.24 (1).jpeg',
+          'src/earings/WhatsApp Image 2026-03-30 at 12.19.24 (2).jpeg',
+          'src/earings/WhatsApp Image 2026-03-30 at 12.19.24.jpeg',
+          'src/earings/WhatsApp Image 2026-03-30 at 12.19.25.jpeg',
+          'src/earings/WhatsApp Image 2026-03-30 at 12.19.27 (2).jpeg',
+          'src/earings/WhatsApp Image 2026-03-30 at 12.19.27.jpeg',
+          'src/earings/WhatsApp Image 2026-03-30 at 12.19.29 (1).jpeg',
+          'src/earings/WhatsApp Image 2026-03-30 at 12.19.29 (2).jpeg',
+          'src/earings/WhatsApp Image 2026-03-30 at 12.19.30.jpeg',
+          'src/earings/WhatsApp Image 2026-03-30 at 12.19.31 (1).jpeg',
+          'src/earings/WhatsApp Image 2026-03-30 at 12.19.31 (3).jpeg',
+          'src/earings/WhatsApp Image 2026-03-30 at 12.19.31.jpeg',
+          'src/earings/WhatsApp Image 2026-03-30 at 12.19.32 (1).jpeg',
+          'src/earings/WhatsApp Image 2026-03-30 at 12.19.33.jpeg',
+        ],
+      },
+      {
+        cat: 'pendents',
+        label: 'Pendent',
+        emoji: '🌿',
+        bg: 'linear-gradient(135deg,#d8ecd8,#9cc79c)',
+        images: [
+          'src/Pendent/WhatsApp Image 2026-03-30 at 12.19.25 (1).jpeg',
+          'src/Pendent/WhatsApp Image 2026-03-30 at 12.19.25 (2).jpeg',
+          'src/Pendent/WhatsApp Image 2026-03-30 at 12.19.26 (1).jpeg',
+          'src/Pendent/WhatsApp Image 2026-03-30 at 12.19.26.jpeg',
+          'src/Pendent/WhatsApp Image 2026-03-30 at 12.19.28 (1).jpeg',
+          'src/Pendent/WhatsApp Image 2026-03-30 at 12.19.30 (2).jpeg',
+          'src/Pendent/WhatsApp Image 2026-03-30 at 12.19.31 (2).jpeg',
+          'src/Pendent/WhatsApp Image 2026-03-30 at 12.19.32 (2).jpeg',
+          'src/Pendent/WhatsApp Image 2026-03-30 at 12.19.32 (3).jpeg',
+          'src/Pendent/WhatsApp Image 2026-03-30 at 12.19.32.jpeg',
+          'src/Pendent/WhatsApp Image 2026-03-30 at 12.19.33 (1).jpeg',
+          'src/Pendent/WhatsApp Image 2026-03-30 at 12.19.33 (2).jpeg',
+          'src/Pendent/WhatsApp Image 2026-03-30 at 12.19.34.jpeg',
+        ],
+      },
+    ];
+    const heights = [300, 220, 260, 190, 340, 200, 240, 280, 210, 320, 230];
+    let nextId = 1;
+
+    return galleryGroups.flatMap(group =>
+      group.images.map((image, index) => ({
+        id: nextId++,
+        cat: group.cat,
+        label: `${group.label} Design ${index + 1}`,
+        emoji: group.emoji,
+        bg: group.bg,
+        h: heights[index % heights.length],
+        image,
+      }))
+    );
+  })(),
+  COLLECTION: [
+    { cat: 'Bracelets', name: 'Emerald Solitaire', desc: 'Colombian emerald in classic four-prong yellow gold — timeless refinement.', emoji: '💍', bg: 'linear-gradient(135deg,#d0f0d8,#88d098)', image: 'src/images/WhatsApp Image 2026-03-30 at 12.19.18.jpeg', modal_desc: 'An emerald-cut Colombian emerald set in a classic four-prong yellow gold band, embodying timeless refinement.' },
+    { cat: 'Earrings', name: 'Diamond Tennis Necklace', desc: 'Brilliant-cut diamonds flowing in perfect harmony on platinum.', emoji: '📿', bg: 'linear-gradient(135deg,#d0d0ec,#a8a8d0)', image: 'src/images/WhatsApp Image 2026-03-30 at 12.19.22 (2).jpeg', modal_desc: 'A continuous line of brilliant-cut diamonds in prong settings, crafted in platinum for luminous impact.' },
+    { cat: 'Rings', name: 'Chandelier Drops', desc: 'Cascading yellow gold and diamond drops for a dramatic entrance.', emoji: '✨', bg: 'linear-gradient(135deg,#f5e0b0,#e0c060)', image: 'src/images/WhatsApp Image 2026-03-30 at 12.19.23 (1).jpeg', modal_desc: 'Cascading yellow gold and diamond drops that catch the light with every movement — unforgettable.' },
+    { cat: 'Pendants', name: 'Blue Topaz Crossover', desc: 'Oval blue topaz with crossing diamond shoulders in white gold.', emoji: '💠', bg: 'linear-gradient(135deg,#c8e8f8,#80c0e8)', image: 'src/images/WhatsApp Image 2026-03-30 at 12.19.25 (1).jpeg', modal_desc: 'An oval blue topaz set with bold crossing diamond shoulders in white gold — architectural and striking.' },
+    { cat: 'Necklaces', name: 'Heirloom Mangalsutra', desc: 'Traditional craftsmanship reimagined with modern diamond paving.', emoji: '⚜️', bg: 'linear-gradient(135deg,#e8dcc0,#c8a870)', image: 'src/images/WhatsApp Image 2026-03-30 at 12.19.28 (3).jpeg', modal_desc: 'Traditional Indian craftsmanship completely reimagined — a golden arc with diamond paving for the modern bride.' },
+  ],
+  PAGE_NAMES: ['Home', 'About', 'Process', 'Gallery', 'Collection', 'Contact'],
+  PAGE_PATHS: {
+    Home: 'index.html',
+    About: 'about.html',
+    Process: 'process.html',
+    Gallery: 'gallery.html',
+    Collection: 'collection.html',
+    Contact: 'contact.html',
+  },
+};

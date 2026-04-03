@@ -1,0 +1,3 @@
+(() => {
+  window.AppPages = window.AppPages || {};
+})();
