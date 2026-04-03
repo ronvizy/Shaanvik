@@ -1,4 +1,5 @@
 window.AppData = {
+  CONTACT_FORM_ENDPOINT: 'https://script.google.com/macros/s/AKfycbyypFiuGKaJBbWYt2HQ-Cjs031yN6J5TY3_zxv-CXFh3GAZOpuItIgq8v9TxtMo3V09VQ/exec',
   GALLERY: (() => {
     const galleryGroups = [
       {
