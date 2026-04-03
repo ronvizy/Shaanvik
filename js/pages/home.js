@@ -61,13 +61,13 @@ window.AppPages.HomePage = function HomePage({ setPage }) {
     ),
     React.createElement(
       'section',
-      { style: { padding: '120px 64px', background: '#fff' } },
+      { className: 'home-section home-about-section' },
       React.createElement(
         'div',
-        { style: { display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '100px', alignItems: 'center' } },
+        { className: 'home-about-grid' },
         React.createElement(
           'div',
-          null,
+          { className: 'home-about-copy' },
           React.createElement('div', { className: 'eyebrow rv', style: { marginBottom: 20 } }, 'About Shaanvik'),
           React.createElement('h2', { className: 'h2 rv d1' }, 'Where craftsmanship meets ', React.createElement('em', { className: 'italic-pink' }, 'emotion')),
           React.createElement('p', { className: 'body-txt rv d2', style: { marginTop: 20, marginBottom: 36 } }, 'At Shaanvik Group Co., Ltd., we believe jewelry is more than an accessory — it is a story, a memory, and a statement. From concept to completion, our team works closely with every client.'),
@@ -75,7 +75,7 @@ window.AppPages.HomePage = function HomePage({ setPage }) {
         ),
         React.createElement(
           'div',
-          { className: 'rv d2', style: { display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 } },
+          { className: 'rv d2 home-feature-grid' },
           [['✦', 'Bespoke Design', 'Every piece uniquely conceived for you.'], ['◈', 'Fine Materials', 'Ethically sourced gemstones & metals.'], ['⟡', 'Master Artisans', 'Decades of expertise in every detail.'], ['◇', 'Timeless Quality', 'Crafted to be treasured for generations.']].map(([icon, title, description]) =>
             React.createElement(
               'div',
@@ -90,37 +90,37 @@ window.AppPages.HomePage = function HomePage({ setPage }) {
     ),
     React.createElement(
       'section',
-      { style: { padding: '120px 64px', background: 'linear-gradient(160deg,#f9f4f2,#edf0f5)', textAlign: 'center' } },
+      { className: 'home-section home-journey-section' },
       React.createElement('div', { className: 'eyebrow rv', style: { justifyContent: 'center', marginBottom: 16 } }, 'The Journey'),
       React.createElement('h2', { className: 'h2 rv d1', style: { marginBottom: 16 } }, 'From ', React.createElement('em', { className: 'italic-pink' }, 'vision'), ' to reality'),
-      React.createElement('p', { className: 'body-txt rv d2', style: { maxWidth: 520, margin: '0 auto 72px' } }, 'A meticulous three-step process where your dream becomes a wearable masterpiece.'),
+      React.createElement('p', { className: 'body-txt rv d2 home-journey-sub' }, 'A meticulous three-step process where your dream becomes a wearable masterpiece.'),
       React.createElement(
         'div',
-        { style: { display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 32, position: 'relative' } },
-        React.createElement('div', { style: { position: 'absolute', top: 56, left: 'calc(16.66% + 28px)', right: 'calc(16.66% + 28px)', height: '1px', background: 'linear-gradient(90deg,var(--pink),var(--blue))' } }),
+        { className: 'home-journey-grid' },
+        React.createElement('div', { className: 'home-journey-line' }),
         [['💡', '01', 'Client Inspiration', 'You share your vision — a photo, a feeling, a dream. We listen deeply.'], ['⚙️', '02', 'Manufacturing', 'Our artisans translate your vision into precise models, then craft each detail.'], ['✨', '03', 'Final Piece', 'Delivered as a wearable story, finished to perfection.']].map(([icon, number, title, description]) =>
           React.createElement(
             'div',
-            { key: number, className: 'rv', style: { display: 'flex', flexDirection: 'column', alignItems: 'center' } },
-            React.createElement('div', { style: { width: 52, height: 52, borderRadius: '50%', background: '#fff', border: '1.5px solid var(--pink-l)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'Cormorant Garamond,serif', fontSize: '1.2rem', marginBottom: 28, boxShadow: '0 4px 20px rgba(232,180,184,.2)', zIndex: 1 } }, number),
+            { key: number, className: 'rv home-journey-step' },
+            React.createElement('div', { className: 'home-journey-node' }, number),
             React.createElement(
               'div',
-              { style: { background: '#fff', borderRadius: 24, padding: '40px 32px', boxShadow: '0 8px 40px rgba(200,150,140,.1)', width: '100%' } },
-              React.createElement('div', { style: { fontSize: '2.4rem', marginBottom: 16 } }, icon),
-              React.createElement('h3', { className: 'h3', style: { marginBottom: 12 } }, title),
+              { className: 'home-journey-card' },
+              React.createElement('div', { className: 'home-journey-icon' }, icon),
+              React.createElement('h3', { className: 'h3 home-journey-title' }, title),
               React.createElement('p', { className: 'small-txt' }, description)
             )
           )
         )
       ),
-      React.createElement('button', { className: 'btn-outline rv', style: { marginTop: 60 }, onClick: () => nav('Process') }, 'See Full Process')
+      React.createElement('button', { className: 'btn-outline rv home-section-cta', onClick: () => nav('Process') }, 'See Full Process')
     ),
     React.createElement(
       'section',
-      { style: { padding: '120px 64px', background: '#fff' } },
+      { className: 'home-section home-featured-section' },
       React.createElement(
         'div',
-        { style: { display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: 52, flexWrap: 'wrap', gap: 24 } },
+        { className: 'home-featured-head' },
         React.createElement(
           'div',
           null,
@@ -131,7 +131,7 @@ window.AppPages.HomePage = function HomePage({ setPage }) {
       ),
       React.createElement(
         'div',
-        { style: { display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 22 } },
+        { className: 'home-gallery-grid' },
         GALLERY.filter(item => item.cat === 'rings').slice(0, 4).map((item, index) =>
           React.createElement(
             'div',
@@ -162,11 +162,11 @@ window.AppPages.HomePage = function HomePage({ setPage }) {
     ),
     React.createElement(
       'section',
-      { style: { padding: '120px 64px', background: 'var(--dark)', textAlign: 'center', position: 'relative', overflow: 'hidden' } },
-      React.createElement('div', { style: { position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at center,rgba(232,180,184,.1) 0%,transparent 70%)', pointerEvents: 'none' } }),
-      React.createElement('h2', { className: 'h2 rv', style: { color: '#fff', marginBottom: 20, position: 'relative', zIndex: 1 } }, 'Ready to wear ', React.createElement('em', { className: 'italic-pink' }, 'your story?')),
-      React.createElement('p', { className: 'body-txt rv d1', style: { color: 'rgba(255,255,255,.55)', maxWidth: 480, margin: '0 auto 48px', position: 'relative', zIndex: 1 } }, "Let's create something uniquely yours. Our artisans are waiting to bring your vision to life."),
-      React.createElement('button', { className: 'btn-pink rv d2', style: { position: 'relative', zIndex: 1 }, onClick: () => nav('Contact') }, 'Begin Your Journey')
+      { className: 'home-section home-cta-section' },
+      React.createElement('div', { className: 'home-cta-glow' }),
+      React.createElement('h2', { className: 'h2 rv home-cta-title' }, 'Ready to wear ', React.createElement('em', { className: 'italic-pink' }, 'your story?')),
+      React.createElement('p', { className: 'body-txt rv d1 home-cta-copy' }, "Let's create something uniquely yours. Our artisans are waiting to bring your vision to life."),
+      React.createElement('button', { className: 'btn-pink rv d2 home-cta-button', onClick: () => nav('Contact') }, 'Begin Your Journey')
     )
   );
 };
